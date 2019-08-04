@@ -1,2 +1,2 @@
 # NatubaFinal
-Final Web Page for Natuba.
+Pagina creada para Natuba, implementando Bootstrap.

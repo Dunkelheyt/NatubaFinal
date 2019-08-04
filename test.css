@@ -1,0 +1,147 @@
+.spacing{
+  letter-spacing: 0.7em;
+}
+
+.spacingsmall{
+  letter-spacing: 0.4em;
+}
+
+@font-face{
+  font-family: BencoLeng;
+  src: url(font/Bencoleng.otf);
+}
+
+@font-face{
+  font-family: BlackSingature;
+  src: url(font/BlackSingature.ttf);
+}
+
+@font-face{
+  font-family: Cactulus;
+  src: url(font/Cactulus.otf);
+}
+
+@font-face{
+  font-family: DK Rumpelstiltskin;
+  src: url(font/DKRumpelstiltskin.otf);
+}
+
+@font-face{
+  font-family: kidson;
+  src: url(font/kidson.ttf);
+}
+
+@font-face{
+  font-family: Kidstar;
+  src: url(font/Kidstar.ttf);
+}
+
+@font-face{
+  font-family: Moonllime;
+  src: url(font/Moonllimer.ttf);
+}
+
+@font-face{
+  font-family: NathaliaDemo;
+  src: url(font/NathaliaDemo.ttf);
+}
+
+@font-face{
+  font-family: RaphtaliaDEMO;
+  src: url(font/RaphtaliaDEMO.ttf);
+}
+
+@font-face{
+  font-family: OratorStdMedium;
+  src: url(font/OratorStdMedium.ttf);
+}
+
+@font-face{
+  font-family: Rothena;
+  src: url(font/Rothena.ttf);
+}
+
+@font-face{
+  font-family: Simplicito;
+  src: url(font/Simplicito.otf);
+}
+
+@font-face{
+  font-family: SUNN;
+  src: url(font/SUNN.otf);
+}
+
+@font-face{
+  font-family: WhiskyCoke;
+  src: url(font/WhiskyCoke.otf);
+}
+
+.bencoleng{
+  font-family: BencoLeng;
+    color: white;
+}
+
+.blacksing{
+  font-family: BlackSingature;
+  color: white;
+}
+
+.cactulus{
+  font-family: Cactulus;
+  color: white;
+}
+
+.dk{
+  font-family: DK Rumpelstiltskin;
+  color: white;
+}
+
+.kidson{
+  font-family: kidson;
+  color: white;
+}
+
+.kidstar{
+  font-family: Kidstar;
+  color: white;
+}
+
+.moon{
+  font-family: Moonllime;
+  color: white;
+}
+
+.nat{
+  font-family: NathaliaDemo;
+  color: white;
+}
+
+.ora{
+  font-family: OratorStdMedium;
+  color: white;
+}
+
+.raph{
+  font-family: RaphtaliaDEMO;
+  color: white;
+}
+
+.roth{
+  font-family: Rothena;
+  color: white;
+}
+
+.simp{
+  font-family: Simplicito;
+  color: white;
+}
+
+.sunn{
+  font-family: SUNN;
+  color: white;
+}
+
+.whisky{
+  font-family: WhiskyCoke;
+  color: white;
+}
