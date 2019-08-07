@@ -14,6 +14,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script type="text/javascript" src="buttonTop.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="togglers.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="120">
 
@@ -266,6 +269,117 @@
 <script src="js/map.js" defer></script>
 
 
+
+
+<script>
+
+var tiendasNoroeste= {"tiendasNORO":[
+{"tiendasNombreNORO":"La Borra Del Café Monterrey zona Roma", "calleNORO":"Av. Eugenio Garza Sada 2410, Local 6 Planta Baja, Roma, Tecnológico, 64700"},
+{"tiendasNombreNORO":"La Borra Del Café Monterrey Mariano Escobedo", "calleNORO":"Calle Gral. Mariano Escobedo 588, Centro, 64000 Monterrey, N.L."}
+]};
+
+var tiendasNoreste= {"tiendasNORE":[
+{"tiendasNombreNORE":"La Borra Del Café Chihuahua", "calleNORE":"Plaza Tres Vias, Avenida Mirador 1600, Campestre, Chihuahua, Chih."}
+]};
+
+var tiendasOccidente= {"tiendasO":[
+{"tiendasNombre" : "Gaia","calle": "Pablo Neruda 2986, Providencia"},
+{"tiendasNombre" : "El Merkader","calle": "Nueva Escocia 1476, Providencia "},
+{"tiendasNombre" : "Super Sol Naciones Unidas","calle": "Naciones Unidas 6396, Parque de la castellana"},
+{"tiendasNombre" : "Punto Yoga","calle": "Brasilia 2876, Interior 5, Colomos Providencia."},
+{"tiendasNombre" : "Dhakata Yoga","calle": "Av. Niño Obrero 300, Int 1, Col. Camino Real"},
+{"tiendasNombre" : "Super Wow","calle": "Av mexico 2015, Ladron de Guevara"},
+{"tiendasNombre" : "Abarrotes Providencia","calle": "Libertad 1858, americana"},
+{"tiendasNombre" : "Hospital Puerta Norte","calle": "Av Empresarios 150, Puerta de Hierro"},
+{"tiendasNombre" : "Hospital Puerta Sur","calle": "Lopez Mateos Sur 1401, Las Amapas"},
+{"tiendasNombre" : "Hospital San Javier","calle": "Av Pablo Casals 640, Padros Providencia"},
+{"tiendasNombre" : "HP Fuentes","calle": "Av. Camino al Iteso 8270, El Mante, 45080 Zapopan, Jal."},
+{"tiendasNombre" : "HP Montemorelos","calle": "Calle Montemorelos 299, Loma Bonita, 45060 Zapopan, Jal."},
+{"tiendasNombre" : "Colegio Franco Mexicano","calle": "Francisco Villa 235, El Bajio"},
+{"tiendasNombre" : "Escuela de Ballet: Carla Restelli","calle": "Av Sta Margarita 4950, Valle Real, 45136 Zapopan, Jal."},
+{"tiendasNombre" : "Hotel Westin Expo Guadalajara","calle": "Av de Las Rosas 2911, Verde Valle, 44530 Guadalajara, Jal."},
+{"tiendasNombre" : "La Borra de Cafe Chapultepec","calle": "Chapultepec Sur 208, Col. Lafayette"},
+{"tiendasNombre" : "La Borra de Cafe Minerva","calle": "Av Vallarta Eje Poniente 3298, Vta norte"},
+{"tiendasNombre" : "La Borra de Cafe Andares","calle": "Av. Acueducto 4851,  Puerta de hierro"},
+{"tiendasNombre" : "La Borra de Cafe Aleira","calle": "Av Juan Gil Preciado 2000, Los Robles"},
+{"tiendasNombre" : "La Borra de Cafe Solares","calle": "Paseo el Alba 44, Residencial Solares"},
+{"tiendasNombre" : "La Borra de Cafe Camara de Comercio","calle": "Av Vallarta 4095, Don Bosco Vallarta"},
+{"tiendasNombre" : "La Borra de Cafe Nueva Galicia","calle": "Blvd Valle del Silicio 2, Nueva Galicia"},
+{"tiendasNombre" : "La Borra de Cafe Chapalita","calle": "Av Guadalupe 4015, cd de los niños"},
+{"tiendasNombre" : "La Borra de Cafe Tlaquepaque","calle": "Andador Independencia eje 132, San Pedro Tlaquepaque"},
+{"tiendasNombre" : "La Borra de Cafe Hidalgo","calle": "Av Hidalgo 1798, Col. Ladron de Guevara"},
+{"tiendasNombre" : "La Borra de Cafe Cititower","calle": "Av Mexico 2582, Col. Ladron de Guevara"},
+{"tiendasNombre" : "La Borra de Cafe Mind","calle": "Av Faro 2350, Verde Valle"},
+{"tiendasNombre" : "La Borra de Cafe Pabellon","calle": "Av Acueducto 2380, Col. Colomos "},
+{"tiendasNombre" : "La Borra de Cafe Servidor Publico","calle": "Servidor Publico 1262, Jardines del Valle"},
+{"tiendasNombre" : "La Borra de Cafe Gran Plaza","calle": "Av Vallarta 3959, La Gran Plaza"},
+{"tiendasNombre" : "La Borra de Cafe Tonala","calle": "Av Tonala 206, Tonala Centro"},
+{"tiendasNombre" : "La Borra de Cafe UVM","calle": "Periferico Poniente 7900, Jardines del Colli"},
+{"tiendasNombre" : "La Borra de Cafe Iconia","calle": "Av. Vallarta #5145, Camino Real, Zapopan. Local L-25 planta baja"},
+{"tiendasNombre" : "La Borra de Cafe Meridiano","calle": "Av. Vallarta 6025, Condominio. Mestro Meridiano 103 Local No. 3, Col. Ciudad Granja."},
+{"tiendasNombre" : "La Borra de Cafe Plaza Patria","calle": "Av. Patria S/N Col. Jacarandas. Local N15"},
+{"tiendasNombre" : "La Borra de Cafe Tabachines","calle": "Av. Tabachines #3220 int 7, fraccionamiento Tabachines C.P. 45188, Zapopan Jal."},
+{"tiendasNombre" : "La Borra de Cafe Superama","calle": "Av. Sta Margarita 4001, Poniente, 45136 Zapopan, Jal."},
+{"tiendasNombre" : "La Borra de Cafe Madre de Dios","calle": "Calle Bogota 2936, Providencia 4a. Secc, 44639 Guadalajara, Jal."},
+{"tiendasNombre" : "La Borra de Cafe Metro Park","calle": "Plaza Metropark, Metropark, Av. Ecónomos, Parque Metropolitano, 45030 Zapopan, Jal."},
+{"tiendasNombre" : "Honey Market Chapultepec","calle": "Av Chapultepec Sur 208, Col Americana, Lafayette, 44160 Guadalajara, Jal."},
+{"tiendasNombre" : "Honey Market Mind","calle": "Av Faro 2350, Verde Valle, 44550 Guadalajara, Jal."}
+]};
+
+var tiendasSureste= {"tiendasSURE":[
+{"tiendasNombreSURE":"MSA CONSINTIENDOME SPA", "calleSURE":"Alonso Hernández de Portocarrero 52, Reforma, 91919 Veracruz, Ver."},
+{"tiendasNombreSURE":"Appetitbs", "calleSURE":"Calle España 448, poligono 1, Reforma, 91919 Veracruz, Ver."},
+{"tiendasNombreSURE":"Yogaloft", "calleSURE":"J. de Grijalva 763, Virginia, 94294 Veracruz, Ver."},
+{"tiendasNombreSURE":"OM SHANTI ", "calleSURE":"AMPARO DE LA TORRE 991, 91800 VERACRUZ LLAVE"},
+{"tiendasNombreSURE":"YOGA.STUDIO.EN.EQUILIBRIO", "calleSURE":"Tuero molina 318 esq Juan de Dios Pesa, Vercaruz 91910"},
+{"tiendasNombreSURE":"PILATESSTUDIO CRISTY FERREIRA", "calleSURE":"PLAZA MARYN, AV COSTA VERDE, BOCA DEL RIO"},
+{"tiendasNombreSURE":"LA SEMILLA", "calleSURE":"Calle Vasco Núñez de Balboa 72, Reforma, 91919 Veracruz, Ver."},
+{"tiendasNombreSURE":"ARYA YOGA ROOM", "calleSURE":"AV. PALMERAS NO 646 LOCAL 13 FRACC. JARDINES DE VIRGINIA, BOCA DEL RIO"},
+{"tiendasNombreSURE":"VID GARDEN", "calleSURE":"JARDINES DE VIRGINIA, BOCA DEL RIO"},
+{"tiendasNombreSURE":"BUDDHA INSTITUTE", "calleSURE":"Privada Santiago Tuxtla, Fracc La Tampiquera, 94290 Boca del Río, Veracruz de Ignacio de la Llave"},
+{"tiendasNombreSURE":"GABBY CONTRERAS  SALON", "calleSURE":"AV. MARTIN ALONSO PINZON 865, FRACC REFORMA, VERACRUZ"},
+{"tiendasNombreSURE":"DIANA SIERRA SALON", "calleSURE":"ESPAÑA 645-A ENTRE CATOLICA Y MARTI GRACC. REFORMA VERACRUZ"}
+]};
+
+var tiendasOnline = {"tiendasON":[
+{"tiendasNombreOnline":"Snack Club", "calleOnline": "https://snackclub.mx/"}
+]};
+</script>
+
+
+<div class = "sections">
+      <h1 class = "titles">Informacion sobre los locales</h1>
+      <p class ="sletters">Puedes hacer clic en los siguientes titulos para desplegar la información sobre las tiendas de cada zona correspondiente.</p>
+      <h1 class = "stitles toggler">Zona Noroeste</h1>
+      <div class="row mx-auto text-center" id="id01">
+       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasNORO"><p>{{tiendasNombreNORO}}</p> <p>{{calleNORO}}</p></div>
+      </div>
+      <h1 class = "stitles toggler">Zona Noreste</h1>
+      <div class="row mx-auto text-center" id="id02">
+       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasNORE"><p>{{tiendasNombreNORE}}</p> <p>{{calleNORE}}</p></div>
+      </div>
+      <h1 class = "stitles toggler">Zona Occidental</h1>
+      <div class="row mx-auto text-center" id="id03">
+       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasO"><p>{{tiendasNombre}}</p> <p>{{calle}}</p></div>
+      </div>
+      <h1 class = "stitles toggler">Zona Sureste</h1>
+      <div class="row mx-auto text-center" id="id04">
+       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasSURE"><p>{{tiendasNombreSURE}}</p> <p>{{calleSURE}}</p></div>
+      </div>
+      <h1 class = "stitles toggler">Online</h1>
+      <div class="row mx-auto text-center" id="id05">
+       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasON"><p>{{tiendasNombreOnline}}</p> <a href={{calleOnline}}>{{calleOnline}}</a></div>
+      </div>
+
+</div>
+<script>
+w3.displayObject("id01", tiendasNoroeste);
+w3.displayObject("id02", tiendasNoreste);
+w3.displayObject("id03", tiendasOccidente);
+w3.displayObject("id04", tiendasSureste);
+w3.displayObject("id05", tiendasOnline);
+</script>
+
 <section id = "parte5">
   <div class = "sections">
     <h1 class = "titles">Contáctanos</h1>
@@ -320,7 +434,4 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="main.js"></script>
 </section>
-
-
-
 </body>
