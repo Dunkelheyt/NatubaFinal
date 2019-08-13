@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/banners/bsmall.jpg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script type="text/javascript" src="buttonTop.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="togglers.js"></script>
+  <script type="text/javascript" src="js/togglers.js"></script>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="120">
@@ -341,43 +342,64 @@ var tiendasSureste= {"tiendasSURE":[
 {"tiendasNombreSURE":"DIANA SIERRA SALON", "calleSURE":"ESPAÑA 645-A ENTRE CATOLICA Y MARTI GRACC. REFORMA VERACRUZ"}
 ]};
 
+
+var zonaNoroeste = {"ciudadesNOR":[
+{"nombreCNOR":"Monterrey"}
+]};
+
+var zonaNoreste = {"ciudadesNORE":[
+{"nombreCNORE":"Chihuahua"}
+]};
+
+var zonaOcci = {"ciudadesOCC":[
+{"nombreCOC":"Guadalajara"},
+{"nombreCOC":"Zapopan"},
+{"nombreCOC":"Colima"},
+{"nombreCOC":"Tepic"}
+]};
+
+var zonaSure = {"ciudadesSURE":[
+{"nombreCSURE": "Veracruz"}
+]};
+
 var tiendasOnline = {"tiendasON":[
 {"tiendasNombreOnline":"Snack Club", "calleOnline": "https://snackclub.mx/"}
 ]};
+
 </script>
 
 
 <div class = "sections">
-      <h1 class = "titles">Informacion sobre los locales</h1>
-      <p class ="sletters">Puedes hacer clic en los siguientes titulos para desplegar la información sobre las tiendas de cada zona correspondiente.</p>
+      <h1 class = "titles">Información sobre las ciudades con locales</h1>
+      <p class ="sletters">¡Puedes hacer clic en los siguientes titulos para desplegar información de las ciudades con productos oficiales Natuba!</p>
       <h1 class = "stitles toggler">Zona Noroeste</h1>
-      <div class="row mx-auto text-center" id="id01">
-       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasNORO"><p>{{tiendasNombreNORO}}</p> <p>{{calleNORO}}</p></div>
-      </div>
+      <ul class ="text-right nostyle" id="zonaNORO">
+        <li class = "fix initiallyHidden greens" w3-repeat="ciudadesNOR"><img class="pads" src="img/icon/natnoreste.png"></img>{{nombreCNOR}}<img class="pads" src="img/icon/natnoreste.png"></img></li>
+      </ul>
       <h1 class = "stitles toggler">Zona Noreste</h1>
-      <div class="row mx-auto text-center" id="id02">
-       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasNORE"><p>{{tiendasNombreNORE}}</p> <p>{{calleNORE}}</p></div>
-      </div>
+      <ul class ="text-center nostyle" id="zonaNORE">
+        <li class = "fix initiallyHidden greens" w3-repeat="ciudadesNORE"><img class="pads" src="img/icon/natnoreste.png"></img>{{nombreCNORE}}<img class="pads" src="img/icon/natnoreste.png"></img></li>
+      </ul>
       <h1 class = "stitles toggler">Zona Occidental</h1>
-      <div class="row mx-auto text-center" id="id03">
-       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasO"><p>{{tiendasNombre}}</p> <p>{{calle}}</p></div>
-      </div>
+      <ul class ="text-center nostyle" id="zonaOCCI">
+        <li class = "fix initiallyHidden greens" w3-repeat="ciudadesOCC"><img class="pads" src="img/icon/naticon.png"></img>{{nombreCOC}}<img class="pads" src="img/icon/naticon.png"></img></li>
+      </ul>
       <h1 class = "stitles toggler">Zona Sureste</h1>
-      <div class="row mx-auto text-center" id="id04">
-       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasSURE"><p>{{tiendasNombreSURE}}</p> <p>{{calleSURE}}</p></div>
-      </div>
+      <ul class ="text-center nostyle" id="zonaSURE">
+        <li class = "fix initiallyHidden greens" w3-repeat="ciudadesSURE"><img class="pads" src="img/icon/natsureste.png"></img>{{nombreCSURE}}<img class="pads" src="img/icon/natsureste.png"></img></li>
+      </ul>
       <h1 class = "stitles toggler">Online</h1>
-      <div class="row mx-auto text-center" id="id05">
-       <div class="col-sm-4 sletters initiallyHidden border" w3-repeat="tiendasON"><p>{{tiendasNombreOnline}}</p> <a href={{calleOnline}}>{{calleOnline}}</a></div>
-      </div>
+      <ul class ="text-center nostyle" id="zonaONLINE">
+        <li class = "fix initiallyHidden greens" w3-repeat="tiendasON"><a href={{tiendasNombreOnline}}>{{tiendasNombreOnline}}</a></li>
+      </ul>
 
 </div>
 <script>
-w3.displayObject("id01", tiendasNoroeste);
-w3.displayObject("id02", tiendasNoreste);
-w3.displayObject("id03", tiendasOccidente);
-w3.displayObject("id04", tiendasSureste);
-w3.displayObject("id05", tiendasOnline);
+w3.displayObject("zonaNORO", zonaNoroeste);
+w3.displayObject("zonaNORE", zonaNoreste);
+w3.displayObject("zonaOCCI", zonaOcci);
+w3.displayObject("zonaSURE", zonaSure);
+w3.displayObject("zonaONLINE", tiendasOnline);
 </script>
 
 <section id = "parte5">
