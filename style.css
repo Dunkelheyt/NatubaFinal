@@ -325,7 +325,7 @@ html {
       -moz-transform 0.3s ease-in-out;
       transition: all 0.3s ease-in-out,
       transform 0.3s ease-in-out, ;
-
+      border: 3px solid GREEN;
   }
   .box:hover {
   	transform: scale(1.05);
@@ -398,6 +398,20 @@ html {
   background-position: center;
   background-size: cover;
 	background-image: url("img/chips/cchicharronsoyachile.jpg");
+}
+
+.cimg9 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10));
+  background-position: center;
+  background-size: cover;
+	background-image: url("img/chips/jicama.jpg");
+}
+
+.cimg10 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10));
+  background-position: center;
+  background-size: cover;
+	background-image: url("img/chips/pepino.jpg");
 }
 
 /*Mix data product*/
@@ -497,9 +511,9 @@ html {
   .hovereffect img {
     display:block;
     position:relative;
-    -webkit-transition:all .4s linear;
-    transition:all .4s linear;
-    transform-origin: 50% 50%;
+    -webkit-transition:all .3s linear;
+    transition:all .3s linear;
+    transform-origin: 20% 15%;
     height: 100%;
     width: 100%;
   }
