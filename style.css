@@ -269,7 +269,7 @@ html {
     color: white;
     letter-spacing: 1px;
     font-size: 18px;
-    padding-right:160px;
+    padding-right:35%;
   }
 }
 
@@ -308,7 +308,7 @@ html {
       width: 149%;
       height: 215px;
     	margin: 3%;
-      overflow-x: hidden;
+
   }
 }
 
@@ -458,6 +458,34 @@ html {
 }
 
 /*Stores leterrs*/
+
+/*.mletters*/
+
+@media screen and (min-width:601px){
+  .minletters{
+    font-family: BencoLeng;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.3px;
+    font-size: 0.8vw;
+  }
+}
+
+@media screen and (max-width:600px){
+  .minletters{
+    font-family: BencoLeng;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    margin-right: 39%;
+  }
+}
+
 /*.sletters*/
 @media screen and (min-width:601px){
   .sletters{
@@ -810,6 +838,53 @@ html {
 
 .initiallyHidden { display: none;
 margin: 20px; }
+
+.initiallyHidden2 { display: none;
+margin: 20px; }
+
+.initiallyHidden3 { display: none;
+margin: 20px; }
+
+.initiallyHidden4 { display: none;
+margin: 20px; }
+
+.initiallyHidden5 { display: none;
+margin: 20px; }
+
+.initiallyHidden6 { display: none;
+margin: 20px; }
+
+.initiallyHidden7 { display: none;
+margin: 20px; }
+
+.initiallyHidden8 { display: none;
+margin: 20px; }
+
+.initiallyHidden9 { display: none;
+margin: 20px; }
+
+.initiallyHidden10 { display: none;
+margin: 20px; }
+
+.initiallyHidden11 { display: none;
+margin: 20px; }
+
+.initiallyHidden12 { display: none;
+margin: 20px; }
+
+.initiallyHidden13 { display: none;
+margin: 20px; }
+
+.initiallyHidden14 { display: none;
+margin: 20px; }
+
+.initiallyHidden15 { display: none;
+margin: 20px; }
+
+
+.initiallyHidden16 { display: none;
+margin: 20px; }
+
 
 .nostyle{list-style-type:none;}
 
