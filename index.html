@@ -27,7 +27,7 @@
 <script src="js/button.js" defer></script>
 
 
-<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -360,53 +360,148 @@
     <p class = "letters">Aplica para productos <i>Chips Deshidratados de 30g</i> y <i>Mix de frutos secos de 50g</i>.</p>
 
     <br>
-    <div class="card-deck">
-  <div class="card border-success mb-3 bg-transparent">
-    <div class="card-body text-success bg1">
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="QD6XRVZZBCWGS">
-        <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit">
-        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-        </form>
-      </small>
-    </div>
-  </div>
-  <div class="card border-success mb-3 bg-transparent">
-    <div class="card-body text-success bg2">
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="YAL7VHH57T9SS">
-        <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-        </form>
-        </small>
-    </div>
-  </div>
-  <div class="card border-success mb-3 bg-transparent">
-    <div class="card-body text-success bg3">
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">
-      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="AE82YAK7CV3VU">
-      <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-      <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-      </form>
-      </small>
-    </div>
-  </div>
-</div>
+    <div class ="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-12 col-lg-4">
+          <div class="card-deck">
+            <div class="card border-success mb-3 bg-transparent">
+            <div class="card-body text-success cbg1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-12 col-lg-4">
+          <div class="card-deck">
+            <div class="card border-success mb-3 bg-transparent">
+            <div class="card-body text-success cbg2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-12 col-lg-4">
+          <div class="card-deck">
+            <div class="card border-success mb-3 bg-transparent">
+            <div class="card-body text-success cbg3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-12 col-lg-4">
+          <div class="card-deck">
+            <div class="card border-success mb-3 bg-transparent">
+            <div class="card-body text-success bg1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-12 col-lg-4">
+          <div class="card-deck">
+            <div class="card border-success mb-3 bg-transparent">
+            <div class="card-body text-success bg2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-12 col-lg-4">
+          <div class="card-deck">
+            <div class="card border-success mb-3 bg-transparent">
+            <div class="card-body text-success bg3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-sm-center">
+        <div class="col-sm-6 col-md-12 col-lg-4">
+          <div class="card-deck">
+            <div class="card border-success mb-3 bg-transparent">
+            <div class="card-body text-success promobg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-sm-center">
+        <div class ="col-sm-12 col-md-12 col-lg-4">
+          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 
-    </div>
-  </div>
+          <input type="hidden" name="cmd" value="_cart">
+
+          <input type="hidden" name="business" value="ventas@natubamx.com">
+
+          <input type="hidden" name="lc" value="MX">
+
+          <input type="hidden" name="item_name" value="PAQUETE 20 PIEZAS 30 G">
+
+          <input type="hidden" name="item_number" value="20-30G">
+
+          <input type="hidden" name="button_subtype" value="products">
+
+          <input type="hidden" name="no_note" value="0">
+
+          <input type="hidden" name="currency_code" value="MXN">
+
+          <input type="hidden" name="tax_rate" value="0.000">
+
+          <input type="hidden" name="shipping" value="0.00">
+
+          <input type="hidden" name="add" value="1">
+
+          <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+
+          <table>
+
+          <tr><td><input type="hidden" name="on0" value="TIPO DE PAQUETE"><p class="letters">TIPO DE PAQUETE</p></td></tr><tr><td><select name="os0">
+
+                      <option value="20 PIEZAS 30 G">20 PIEZAS 30 G $400.00 MXN</option>
+
+                      <option value="30 PIEZAS 30 G">30 PIEZAS 30 G $560.00 MXN</option>
+
+                      <option value="50 PIEZAS 30 G">50 PIEZAS 30 G $850.00 MXN</option>
+
+                      <option value="20 PIEZAS 50 G">20 PIEZAS 50 G $560.00 MXN</option>
+
+                      <option value="30 PIEZAS 50 G">30 PIEZAS 50 G $798.00 MXN</option>
+
+                      <option value="50 PIEZAS 50 G">50 PIEZAS 50 G $1,275.00 MXN</option>
+
+                      <option value="5 TOPPINGS POR">5 TOPPINGS POR $40.00 MXN</option>
+
+          </select> </td></tr>
+
+          </table>
+
+          <input type="hidden" name="option_select0" value="20 PIEZAS 30 G">
+
+          <input type="hidden" name="option_amount0" value="400.00">
+
+          <input type="hidden" name="option_select1" value="30 PIEZAS 30 G">
+
+          <input type="hidden" name="option_amount1" value="560.00">
+
+          <input type="hidden" name="option_select2" value="50 PIEZAS 30 G">
+
+          <input type="hidden" name="option_amount2" value="850.00">
+
+          <input type="hidden" name="option_select3" value="20 PIEZAS 50 G">
+
+          <input type="hidden" name="option_amount3" value="560.00">
+
+          <input type="hidden" name="option_select4" value="30 PIEZAS 50 G">
+
+          <input type="hidden" name="option_amount4" value="798.00">
+
+          <input type="hidden" name="option_select5" value="50 PIEZAS 50 G">
+
+          <input type="hidden" name="option_amount5" value="1275.00">
+
+          <input type="hidden" name="option_select6" value="5 TOPPINGS POR">
+
+          <input type="hidden" name="option_amount6" value="40.00">
+
+          <input type="hidden" name="option_index" value="0">
+
+          <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+
+          <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+
+          </form>
+        </div>
+        </div>
+      </div>
 </section>
 
 <section id = "parte4">
@@ -486,7 +581,7 @@ w3.displayObject("zonaONLINE", tiendasOnline);
 <section id = "parte5">
   <div class = "sections animatedParent">
     <h1 class = "titles animated fadeInUp">Contáctanos</h1>
-    <p class ="sletters">¡Si deseas mandar un mensaje, una pregunta ó sugerencia, lo puedes hacer utilizando el siguiente apartado, te contestaremos en la brevedad!</p
+    <p class ="sletters">¡Si deseas mandar un mensaje, una pregunta ó sugerencia, lo puedes hacer utilizando el siguiente apartado, te contestaremos en la brevedad!</p>
     <br>
     <div class="container">
         <div class="row justify-content-center">
