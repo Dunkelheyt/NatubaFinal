@@ -455,6 +455,13 @@ html {
   background-image: url("img/mix/mixnopal.jpg");
 }
 
+.mimg7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/mix/mixmango.jpg");
+}
+
 /*Stores leterrs*/
 
 /*.mletters*/
